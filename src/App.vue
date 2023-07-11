@@ -8,7 +8,7 @@
     <div class="no-result">
       <span>🙄</span>
       <br />
-      <strong>No Items yet...</strong>
+      <strong>No Items yet....</strong>
     </div>
 
     <template>
@@ -39,22 +39,22 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-  $primary-color: #3498db;
-  $white-color: #ffffff;
-  $gray-color: #f1f1f1;
-  $border: 10px;
-  $padding: 10px;
+$primary-color: #3498db;
+$white-color: #ffffff;
+$gray-color: #f1f1f1;
+$border: 10px;
+$padding: 10px;
 
-  .form-task {
-    width: 100%;
-    display: flex;
+.form-task {
+  width: 100%;
+  display: flex;
 
-    &__input {
-      all: initial;
-      width: calc(65% - 1rem);
-      background-color: $gray-color;
-      padding: $padding;
-      border-radius: $border;
-    }
+  &__input {
+    all: initial;
+    width: calc(65% - 1rem);
+    background-color: $gray-color;
+    padding: $padding;
+    border-radius: $border;
   }
+}
 </style>
