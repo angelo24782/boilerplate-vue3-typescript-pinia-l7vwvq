@@ -27,7 +27,9 @@
             type="checkbox"
             class="card-task__checkbox"
             :checked="task.done"
-            v-on:click.prevent="updateTask(task.id)"
+            v-on:click.prevent="
+              task.id !== undefined ? updateTask(task.id) : ''
+            "
           />
 
           <strong class="card-task__name">{{ task.name }}</strong>
@@ -35,7 +37,9 @@
           <button
             type="button"
             class="card-task__button"
-            v-on:click.prevent="deleteTask(task.id)"
+            v-on:click.prevent="
+              task.id !== undefined ? deleteTask(task.id) : ''
+            "
           >
             ❌
           </button>
