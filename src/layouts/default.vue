@@ -1,5 +1,5 @@
 <template>
-  <header>Boilerplate Vue 3 + Typescript + 🍍 Pinia</header>
+  <header>Vue 3 + Typescript + 🍍 Pinia</header>
 
   <hr />
 
@@ -7,7 +7,7 @@
 
   <hr />
 
-  <footer>Make with ❤️</footer>
+  <footer>Learn with ❤️</footer>
 </template>
 
 <script setup lang="ts"></script>
