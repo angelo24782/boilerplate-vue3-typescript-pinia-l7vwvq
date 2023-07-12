@@ -46,6 +46,8 @@ export const useTodoStore = defineStore({
   },
 });
 
-if (import.meta.hot) {
-  import.meta.hot.accept(acceptHMRUpdate(useTodoStore, import.meta.hot));
+if ((import.meta as any).hot) {
+  (import.meta as any).hot.accept(
+    acceptHMRUpdate(useTodoStore, (import.meta as any).hot)
+  );
 }
