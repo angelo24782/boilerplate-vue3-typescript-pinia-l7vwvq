@@ -14,6 +14,10 @@ export const useTodoStore = defineStore({
     tasks: [],
     loading: false,
   }),
+  persist: {
+    key: 'todo',
+    paths: ['tasks'],
+  },
   getters: {},
   actions: {
     async addTask(name: string): Promise<void> {
